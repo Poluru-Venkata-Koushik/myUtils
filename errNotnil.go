@@ -1,4 +1,4 @@
-package myutils
+package myUtils
 
 import (
 	"log"
