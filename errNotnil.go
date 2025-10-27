@@ -1,7 +1,17 @@
 package myutils
 
-func errNotnil(err *error) bool{
-	return err!=nil
+import (
+	"log"
+)
+
+const (
+	Red   = "\033[31m"
+)
+
+func ErrNotnil(err *error){
+	if err!=nil{
+		log.Fatalln(Red, "ERROR :", err)
+	}
 }
 
 
